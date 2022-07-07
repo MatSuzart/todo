@@ -8,6 +8,15 @@
     <title>To-Do</title>
 </head>
 <body>
+    <div class="container">
+        <div class="sidebar">
 
+        </div>
+        <div class="content">
+            <nav>
+                
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
