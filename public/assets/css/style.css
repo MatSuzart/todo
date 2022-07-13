@@ -63,9 +63,9 @@ h2 {
     display: inline-block;
 }
 hr.HeaderLine {
-    flex: 1;
+
     display: inline-block;
-    width: 50px;
+    width: 130px;
 }
 
 hr{
@@ -76,8 +76,39 @@ hr{
 a.btn {
     text-decoration: none;
 }
+.graph_header {
+    display: flex;
+    justify-content: space-between;
+}
+.section.graph {
+    width:33%;
+    height: 100%;
+    padding: 5px;
+}
 .graph_header_subtitle {
     margin-top: 10px;
+}
+.graph-placeholder {
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.graph_header_taks_left {
+    text-align: center;
+    margin-top: 10px;
+}
+.list_header {
+    display: flex;
+
+}
+.list {
+    padding: 5px;
+    
+}
+.list_header-select{
+
 }
 
 :root{

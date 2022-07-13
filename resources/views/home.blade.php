@@ -25,9 +25,18 @@
                         DATE
                         </div>
                         <div class="graph_header_subtitle">Task: <b>/6/</b></div>
+                        <div class="graph-placeholder">
+                           <p class="taks-left"> TASK HAVE DONE</p>
+                        </div>
                     </section>
                     <section class="list">
-
+                            <div class="list-header">
+                                <select class="list_header-select">
+                                    <option value="1">
+                                        ALL TASKS
+                                    </option>
+                                </select>
+                            </div>
                     </section>
                 </main>
             </nav>
