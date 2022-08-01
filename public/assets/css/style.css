@@ -105,10 +105,47 @@ a.btn {
 }
 .list {
     padding: 5px;
-    
+    flex: 1;
+
 }
 .list_header-select{
 
+}
+
+.task_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: teal;
+    margin-top: 20px;
+
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+
+}
+
+.priority, .actions {
+    flex: 1;
+}
+.task_title {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
 }
 
 :root{

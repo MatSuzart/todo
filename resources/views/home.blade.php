@@ -37,6 +37,21 @@
                                     </option>
                                 </select>
                             </div>
+                            <div class="task_list">
+                                <div class="task">
+                                    <div class="title">
+                                        <input type="checkbox" />
+                                        <div class="task_title">TITLE</div>
+                                    </div>
+                                    <div class="priority">
+                                        <div class="sphere"></div>
+                                        <h6>TITLE</h6>
+                                    </div>
+                                    <div class="action">
+                                        EDIT - DELET
+                                    </div>
+                                </div>
+                            </div>
                     </section>
                 </main>
             </nav>
