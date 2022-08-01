@@ -116,7 +116,6 @@ a.btn {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: teal;
     margin-top: 20px;
 
 }
@@ -126,7 +125,12 @@ a.btn {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 30px 15px;
+    margin-bottom: 10px;
+    background-color: 1px solid var(--background-light);
+}
+.task:hover {
+    background-color: var(--background-light);
 }
 
 .title{
@@ -136,11 +140,24 @@ a.btn {
 }
 
 .priority, .actions {
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    align-items: center;
+
 }
 .task_title {
     padding-left: 10px;
     font-weight: bold;
+}
+.sphere {
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+
+
 }
 
 .actions {
