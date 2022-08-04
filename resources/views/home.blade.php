@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-
+            <img src="/assets/images/logo.png" />
         </div>
         <div class="content">
             <nav>
