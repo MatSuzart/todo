@@ -23,6 +23,10 @@ body {
     width: 100px;
     background-color: var(--color-primary);
 }
+
+.side img {
+    max-width: 100%;
+}
 nav {
     height: 100px;
     background-color: var(--background-light);
@@ -94,6 +98,8 @@ a.btn {
     height: 300px;
     margin-top: 20px;
     margin-left: 35px;
+    background: url('/assets/imgages/graph.png');
+    background-size: contain ;
 }
 .graph_header_taks_left {
     text-align: center;
@@ -163,6 +169,11 @@ a.btn {
 .actions {
     display: flex;
     justify-content: flex-end;
+}
+.action a {
+    margin-left: 20px;
+    margin-right: 10px;
+
 }
 
 :root{

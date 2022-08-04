@@ -48,7 +48,12 @@
                                         <h6>TITLE</h6>
                                     </div>
                                     <div class="action">
-                                        EDIT - DELET
+                                        <a href="#">
+                                            <img src="/assets/images/icon-edit.png" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="/assets/images/icon-delete.png" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
