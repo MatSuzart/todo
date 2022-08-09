@@ -21,13 +21,18 @@
                     <section class="graph">
                         <div class="graph_header">
                         <h2>PROGRESSO</h2>
-                        <hr class="HeaderLine"/>
-                        DATE
+                        <div class="graph_header-line"></div>
+                        <div class="graph-component-date">
+                            Date
+                        </div>
                         </div>
                         <div class="graph_header_subtitle">Task: <b>/6/</b></div>
                         <div class="graph-placeholder">
-                           <p class="taks-left"> TASK HAVE DONE</p>
                         </div>
+                           <div class="taks_left_footer">
+                            <img src="assets/images/icon-info.png" />
+                                3 DIAS
+                          </div>
                     </section>
                     <section class="list">
                             <div class="list-header">

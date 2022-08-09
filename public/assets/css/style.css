@@ -63,13 +63,21 @@ section.graph {
     justify-content: space-between;
 }
 h2 {
-    flex: 1;
+    flex: 2;
+    font-size: 18px;
     display: inline-block;
 }
-hr.HeaderLine {
-
+.graph_header-line {
     display: inline-block;
+    background-color: rgba(0, 0,0, .20);
     width: 130px;
+    height: 2px;
+}
+.graph-component-date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 hr{
@@ -81,6 +89,7 @@ a.btn {
     text-decoration: none;
 }
 .graph_header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -96,14 +105,18 @@ a.btn {
     background-color: #ccc;
     width: 300px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 35px;
     background: url('/assets/imgages/graph.png');
     background-size: contain ;
 }
-.graph_header_taks_left {
-    text-align: center;
-    margin-top: 10px;
+.taks_left_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
 }
 .list_header {
     display: flex;
