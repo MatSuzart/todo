@@ -39,6 +39,13 @@ nav {
 .btn {
     padding: 20px 30px;
     border-radius: 10px;
+    transition: all 2 ease-in-out;
+
+
+}
+.btn:houver {
+    transition: all .3s ease-in-out;
+    transform: scale(1.05);
 
 }
 
@@ -147,11 +154,16 @@ a.btn {
     padding: 30px 15px;
     margin-bottom: 10px;
     background-color: 1px solid var(--background-light);
+    transition: all .3 ease-in-out;
 }
 .task:hover {
-    background-color: var(--background-light);
-}
+    transform: scale(1.05);
+    border-radius: 10px;
 
+}
+.actions>a:hover {
+    transform: scale(1.05);
+}
 .title{
     display: flex;
     align-items: center;
@@ -182,6 +194,7 @@ a.btn {
 .actions {
     display: flex;
     justify-content: flex-end;
+    transition: all .3s ease-in-out;
 }
 .action a {
     margin-left: 20px;
