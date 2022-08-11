@@ -57,12 +57,13 @@ nav {
 
 main{
     display:flex;
-    padding: 20px;
+    padding: 0px;
 
 }
 section.graph {
     width:33%;
     height: 100%;
+    padding: 20px 20px 0 20px;
 }
 
 .header_graph {
@@ -130,12 +131,15 @@ a.btn {
 
 }
 .list {
-    padding: 5px;
+    padding: 20px 20px 0 20px;
     flex: 1;
 
 }
 .list_header-select{
-
+    background-color: transparent;
+    border: 0;
+    font-weight: bold;
+    font-size: 9px;
 }
 
 .task_list {

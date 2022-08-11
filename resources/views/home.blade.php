@@ -22,8 +22,9 @@
                         <div class="graph_header">
                         <h2>PROGRESSO</h2>
                         <div class="graph_header-line"></div>
-                        <div class="graph-component-date">
-                            Date
+                        <div class="graph-header-date">
+                            <img src="/assets/images/icon-prev.png" />
+                            <img src="/assets/images/icon-icon-next.png" />
                         </div>
                         </div>
                         <div class="graph_header_subtitle">Task: <b>/6/</b></div>
