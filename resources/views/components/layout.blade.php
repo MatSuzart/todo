@@ -14,13 +14,11 @@
         </div>
         <div class="content">
             <nav>
-                <a href="#" class="btn btn-primary">
-                    NEW
-                </a>
+                {{btn ?? null}}
+            </nav>
                 <main>
                     {{$slot}}
                 </main>
-            </nav>
         </div>
     </div>
 </body>
