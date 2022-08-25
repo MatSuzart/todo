@@ -30,24 +30,15 @@
                                 </select>
                             </div>
                             <div class="task_list">
-                                <div class="task">
-                                    <div class="title">
-                                        <input type="checkbox" />
-                                        <div class="task_title">TITLE</div>
-                                    </div>
-                                    <div class="priority">
-                                        <div class="sphere"></div>
-                                        <h6>TITLE</h6>
-                                    </div>
-                                    <div class="action">
-                                        <a href="#">
-                                            <img src="/assets/images/icon-edit.png" />
-                                        </a>
-                                        <a href="#">
-                                            <img src="/assets/images/icon-delete.png" />
-                                        </a>
-                                    </div>
-                                </div>
+                                @php
+                                ['done' => false, 'title'=> 'task', 'CATEGORY' =>'1'],
+                                ['done' => true, 'title'=> 'task2', 'CATEGORY' =>'2'],
+
+                                @endphp
+                                <x-task>
+                                    data = $task[1]
+                                </x-task>
+                                <x-task/>
                             </div>
                     </section>
 </x-layout>
