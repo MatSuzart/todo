@@ -38,7 +38,7 @@
                                 <x-task>
                                     data = $task[1]
                                 </x-task>
-                                <x-task/>
+                                <x-task   data = $task[1] />
                             </div>
                     </section>
 </x-layout>

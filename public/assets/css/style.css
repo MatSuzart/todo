@@ -94,6 +94,7 @@ hr{
 }
 
 a.btn {
+    margin-left: 5px;
     text-decoration: none;
 }
 .graph_header {

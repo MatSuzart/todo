@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/task/new', [TaskController::class, 'create'])->name('task.create');
+Route::get('/task', [TaskController::class, 'create'])->name('task.create');
+
+Route::get('/login',[AuthController::class, 'index'])->name('login');
+Route::get('/register',[AuthController::class, 'register'])->name('logregisterin');
 Route::get('/', function () {
     return view('home');
 });
@@ -20,3 +27,4 @@ Route::get('/', function () {
 Route::get('/login', function(){
     return view('login');
 });
+
