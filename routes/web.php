@@ -20,7 +20,7 @@ Route::get('/task', [TaskController::class, 'create'])->name('task.create');
 
 Route::get('/login',[AuthController::class, 'index'])->name('login');
 Route::get('/register',[AuthController::class, 'register'])->name('logregisterin');
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
 });
 
