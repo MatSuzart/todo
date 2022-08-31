@@ -8,10 +8,10 @@
                                         <h6>TITLE</h6>
                                     </div>
                                     <div class="action">
-                                        <a href="#">
+                                        <a href="{{route('task.edit')}}">
                                             <img src="/assets/images/icon-edit.png" />
                                         </a>
-                                        <a href="#">
+                                        <a href="{{route('task.delete')}}">
                                             <img src="/assets/images/icon-delete.png" />
                                         </a>
                                     </div>
