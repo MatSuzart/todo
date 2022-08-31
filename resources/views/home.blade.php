@@ -35,8 +35,8 @@
                                 ['done' => true, 'title'=> 'task2', 'CATEGORY' =>'2'],
 
                                 @endphp
-                                <x-task>
-                                    data = $task[1]
+                                <x-task
+                                    data = $task[1] >
                                 </x-task>
                                 <x-task   data = $task[1] />
                             </div>
