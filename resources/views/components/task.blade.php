@@ -5,10 +5,10 @@
                                     </div>
                                     <div class="priority">
                                         <div class="sphere"></div>
-                                        <h6>TITLE</h6>
+                                        <div>{{$data['category']->title ?? ''}}</div>
                                     </div>
                                     <div class="action">
-                                        <a href="{{route('task.edit')}}">
+                                        <a href="{{route('task.edit', ['id'=> $data['id']])}}">
                                             <img src="/assets/images/icon-edit.png" />
                                         </a>
                                         <a href="{{route('task.delete')}}">

@@ -30,15 +30,11 @@
                                 </select>
                             </div>
                             <div class="task_list">
-                                @php
-                                ['done' => false, 'title'=> 'task', 'CATEGORY' =>'1'],
-                                ['done' => true, 'title'=> 'task2', 'CATEGORY' =>'2'],
-
-                                @endphp
+                                @foreach($taks as $task)
                                 <x-task
-                                    data = $task[1] >
-                                </x-task>
-                                <x-task   data = $task[1] />
+                                    :data = $task />
+                                @endforeach
+
                             </div>
                     </section>
 </x-layout>
