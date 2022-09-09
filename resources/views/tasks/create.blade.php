@@ -13,7 +13,28 @@
             <label for="title">
                 Title Task
             </label>
-            <input type="name" required  placeholder="TASK NAME"/>
+            <input type="name" id="title" required  placeholder="TASK NAME"/>
+        </div>
+        <div class="inputArea">
+            <label for="title">
+                Date
+            </label>
+            <input type="date" name="name" required  placeholder="TASK Date"/>
+        </div>
+        <div class="inputArea">
+            <label for="category">
+                Category
+            </label>
+            <section id="cateogry" name="category" required>
+                <option selected disabled value="">SELECT A CATEGORY</option>
+                <option> Value </option>
+            </section>
+        </div>
+        <div class="inputArea">
+            <label for="title">
+            Description
+            </label>
+                <textarea name="description" id="due_date" name="due_date" placeholder=""></textarea>
         </div>
     </form>
 </section>
