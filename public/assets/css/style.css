@@ -214,3 +214,27 @@ a.btn {
     --color-primary:#6143FF;
 }
 
+#create_task_section{
+    margin: auto;
+    background-color: #555;
+    padding-top: 20px;
+}
+.inputArea {
+    display: block;
+}
+#create_task_section>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputArea>label{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.inputArea>input {
+    height: 40px;
+    width: 400px;
+}
+

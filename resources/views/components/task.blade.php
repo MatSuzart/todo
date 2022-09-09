@@ -5,7 +5,7 @@
                                     </div>
                                     <div class="priority">
                                         <div class="sphere"></div>
-                                        <div>{{$data['category']->title ?? ''}}</div>
+                                        <div class="task_title">{{$data['category']->title ?? ''}}</div>
                                     </div>
                                     <div class="action">
                                         <a href="{{route('task.edit', ['id'=> $data['id']])}}">
