@@ -15,6 +15,7 @@
             </label>
             <input type="name" id="title" required  placeholder="TASK NAME"/>
         </div>
+        <x-form.text.input name="title" label ="title task" required ="required"/>
         <div class="inputArea">
             <label for="title">
                 Date
@@ -35,6 +36,9 @@
             Description
             </label>
                 <textarea name="description" id="due_date" name="due_date" placeholder=""></textarea>
+        </div>
+        <div class="inputArea">
+            <button type="submit" class="btn btn-primary">CREATE</button>
         </div>
     </form>
 </section>
