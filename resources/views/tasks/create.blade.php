@@ -37,6 +37,8 @@
             </label>
                 <textarea name="description" id="due_date" name="due_date" placeholder=""></textarea>
         </div>
+        <x-form.button resetTXT="Resetar" submitTXT="CREATE TASK" />
+
         <div class="inputArea">
             <button type="submit" class="btn btn-primary">CREATE</button>
         </div>
