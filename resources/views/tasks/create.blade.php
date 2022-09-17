@@ -28,7 +28,10 @@
             </label>
             <section id="cateogry" name="category" required>
                 <option selected disabled value="">SELECT A CATEGORY</option>
-                <option> Value </option>
+                @foreach($categories as $category)
+
+                <option value="{{$category->id}}">{{$category->title}}</option>
+                @andforeach
             </section>
         </div>
         <div class="inputArea">

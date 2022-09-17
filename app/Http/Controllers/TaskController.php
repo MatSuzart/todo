@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Category;
 class TaskController extends Controller
 {
     public function index(Request $request){
@@ -11,7 +11,11 @@ class TaskController extends Controller
     }
 
     public function create(Request $request){
-        return view('taks.create');
+        $categories = Category::all();
+
+      //  $data = [];
+        $data['categories'] = $categories;
+        return view('taks.create', $data);
     }
 
     public function edit(Request $request){
