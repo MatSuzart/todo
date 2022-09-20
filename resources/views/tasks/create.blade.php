@@ -8,7 +8,8 @@
 <h2>Task's Page</h2>
 <section id="create_task_section">
     <h1> MAKE TASK</h1>
-    <form action="">
+    <form method="POST" action="{{route('task.create_action')}}">
+        @csrf
         <div class="inputArea">
             <label for="title">
                 Title Task
