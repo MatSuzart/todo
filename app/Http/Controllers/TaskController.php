@@ -26,7 +26,7 @@ class TaskController extends Controller
        //$task['user_id'] = 1;
 
        $dbTask = Task::create($task);
-       return $dbTask;
+       return redirect(route('home'));
     }
 
     public function edit(Request $request){
