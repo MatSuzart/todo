@@ -17,6 +17,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/task/new', [TaskController::class, 'create'])->name('task.create');
 Route::post('/task/create_action', [TaskController::class, 'create_action'])->name('task.create_action');
+route::get('/task/edit', [TaskController::class, 'edit'])->name('task.edit');
+route::get('/task/edit', [TaskController::class, 'edit_action'])->name('task.edit_action');
 Route::get('/task', [TaskController::class, 'create'])->name('task.create');
 
 Route::get('/login',[AuthController::class, 'index'])->name('login');

@@ -214,7 +214,7 @@ a.btn {
     --color-primary:#6143FF;
 }
 
-#create_task_section{
+#task_section{
     margin: auto;
     background-color: #555;
     padding-top: 20px;
@@ -223,7 +223,7 @@ a.btn {
     margin: 10px 0 20px 0;
     display: block;
 }
-#create_task_section>h1 {
+#task_section>h1 {
     text-align: center;
     margin-bottom: 20px;
 }

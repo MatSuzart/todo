@@ -1,11 +1,4 @@
-<x-layout page="login" btnHref="https://google.com.br" btnText="Go to google">
-    <x-slot:btn>
-    <a href="{{route('login')}}" class="btn btn-primary">
-        Register
-    </a>
-</x-slot:btn>
-
-<h2>Task's Page</h2>
+<x-layout>
 <section id="task_section">
     <h1> MAKE TASK</h1>
     <form method="POST" action="{{route('task.create_action')}}">
@@ -34,18 +27,5 @@
                 <option value="{{$category->id}}">{{$category->title}}</option>
                 @andforeach
             </section>
-        </div>
-        <div class="inputArea">
-            <label for="title">
-            Description
-            </label>
-                <textarea name="description" id="due_date" name="due_date" placeholder=""></textarea>
-        </div>
-        <x-form.button resetTXT="Resetar" submitTXT="CREATE TASK" />
 
-        <div class="inputArea">
-            <button type="submit" class="btn btn-primary">CREATE</button>
-        </div>
-    </form>
-</section>
 </x-layout>
