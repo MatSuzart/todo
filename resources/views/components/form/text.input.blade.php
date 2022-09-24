@@ -2,11 +2,13 @@
             <label for="{{$name}}">
             {{$label ?? ''}}
             </label>
-                <input
-                type="{{empty($type) ? 'text' : $type)"
-                name="{{$name}}" name="{{name}}" placeholder="{{$placeholder ?? ''}}"
+                <textarea
 
-                {{empty($required) ?'': 'required'}}
+                name="{{name}}"
+                placeholder="{{$placeholder ?? ''}}"
+
+                {{empty($required) ? '': 'required'}}>{{$value?? ''}}</textarea>
+                
                />
 
 

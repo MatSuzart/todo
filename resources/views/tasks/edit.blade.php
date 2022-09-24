@@ -7,14 +7,18 @@
             <label for="title">
                 Title Task
             </label>
-            <input type="name" id="title" required  placeholder="TASK NAME"/>
+            <input type="name" id="title" required  placeholder="TASK NAME"
+            :value="{{$task->title}}"
+            />
         </div>
         <x-form.text.input name="title" label ="title task" required ="required"/>
         <div class="inputArea">
             <label for="title">
                 Date
             </label>
-            <input type="date" name="name" required  placeholder="TASK Date"/>
+            <input type="date" name="name" required  placeholder="TASK Date"
+            value={{$task->due_date}}
+            />
         </div>
         <div class="inputArea">
             <label for="category">
@@ -24,7 +28,11 @@
                 <option selected disabled value="">SELECT A CATEGORY</option>
                 @foreach($categories as $category)
 
-                <option value="{{$category->id}}">{{$category->title}}</option>
+                <option value="{{$category->id}}"
+                    @if($category->id == $task->category_id)
+
+                    @endif
+                >{{$category->title}}</option>
                 @andforeach
             </section>
 
