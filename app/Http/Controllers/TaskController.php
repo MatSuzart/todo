@@ -45,7 +45,18 @@ class TaskController extends Controller
     }
 
     public function edit_action(Request $request){
-        return "";
+        $requestData = $request->only(['id','title','due_data','category_id','description']);
+
+        $task = Task::find($request->id);
+
+            if(!$task){
+                return 'error';
+            }
+
+            $task->update($requestData);
+            $task->save();
+            
+            return redirect(route('home'));
     }
 
     public function delete(Request $request){
