@@ -11,7 +11,17 @@
             :value="{{$task->title}}"
             />
         </div>
-        <x-form.text.input name="title" label ="title task" required ="required"/>
+        <x-form.text.checkbox.input
+        name ="is_done"
+        value="{{$task->is_done}}"
+        label="task_finished"
+        />
+        <x-form.text.input type="checkbox"
+        name ="is_done"
+        value="{{$task->is)done}}"
+        label="task_finished"
+        />
+
         <div class="inputArea">
             <label for="title">
                 Date
