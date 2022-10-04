@@ -4,7 +4,9 @@
         Register
     </a>
 </x-slot:btn>
-<form action="">
+<form method="POST" action="{{route('task.create.action')}}">
+    <h1>REGISTER</h1>
+    @csrf
 <x-form.text_input
     type="name"
     name="name"
