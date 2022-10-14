@@ -4,8 +4,16 @@
         Register
     </a>
 </x-slot:btn>
+@if($error->any())
+<ul class="alert alert-error">
+    @foreach($error->all() as $error)
+    <li>{{$error}}</li>
+    @endforeach
+</ul>
+@endif
 <form method="POST" action="{{route('task.create.action')}}">
     <h1>REGISTER</h1>
+
     @csrf
 <x-form.text_input
     type="name"
