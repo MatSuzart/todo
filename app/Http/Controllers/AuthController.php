@@ -27,7 +27,7 @@ class AuthController extends Controller
         ]);
         $data = $request->only('name','email','password');
 
-        $userCreated = User::create($data);
+      //  $userCreated = User::create($data);
         return redirect(route('login'));
     }
 }

@@ -8,7 +8,7 @@
 <h2>Tela de Login</h2>
 
 <a href="{{route('home')}}">HOME</a>
-<form method="POST" action="{{route('task.create.action')}}">
+<form method="POST" action="{{route('user.login.action')}}">
     <h1>REGISTER</h1>
     @csrf
 <x-form.text_input
@@ -17,7 +17,7 @@
     label="YOUR EMAIL"
     placeholder="YOUR NAME"
     />
- 
+
     <x-form.text_input
     type="password"
     name="password"

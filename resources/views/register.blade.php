@@ -8,7 +8,7 @@
 <ul class="alert alert-error">
     @foreach($error->all() as $error)
     <li>{{$error}}</li>
-    @endforeach
+    @endforeach 
 </ul>
 @endif
 <form method="POST" action="{{route('task.create.action')}}">

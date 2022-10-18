@@ -22,6 +22,7 @@ route::get('/task/edit', [TaskController::class, 'edit_action'])->name('task.edi
 Route::get('/task', [TaskController::class, 'create'])->name('task.create');
 
 Route::get('/login',[AuthController::class, 'index'])->name('login');
+Route::get('/login',[AuthController::class, 'login_action'])->name('login_action');
 Route::get('/register',[AuthController::class, 'register'])->name('logregisterin');
 
 /*Route::get('/', function () {
