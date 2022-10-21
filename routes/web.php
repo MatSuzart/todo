@@ -23,7 +23,8 @@ Route::get('/task', [TaskController::class, 'create'])->name('task.create');
 
 Route::get('/login',[AuthController::class, 'index'])->name('login');
 Route::get('/login',[AuthController::class, 'login_action'])->name('login_action');
-Route::get('/register',[AuthController::class, 'register'])->name('logregisterin');
+Route::get('/register',[AuthController::class, 'register_action'])->name('register');
+Route::get('/register',[AuthController::class, 'register'])->name('user.register');
 
 /*Route::get('/', function () {
     return view('home');
