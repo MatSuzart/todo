@@ -19,7 +19,9 @@ class AuthController extends Controller
             'password'=> 'required|min:6'
         ]);
 
-        
+        $data = $request->only('name','email','password');
+
+        $data['password'] = Hash::make($data['password']);
     }
 
     public function register(Request $request){
