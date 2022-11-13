@@ -19,9 +19,14 @@ class AuthController extends Controller
             'password'=> 'required|min:6'
         ]);
 
-        $data = $request->only('name','email','password');
+      //  $data = $request->only('name','email','password');
 
-        $data['password'] = Hash::make($data['password']);
+      //  $data['password'] = Hash::make($data['password']);
+
+      if(Auth::attempt($validator)){
+        return redirect()->route('home');
+      };
+
     }
 
     public function register(Request $request){

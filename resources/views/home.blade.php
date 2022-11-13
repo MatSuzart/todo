@@ -6,7 +6,7 @@
     <x-slot:btn>
 <section class="graph">
                         <div class="graph_header">
-                        <h2>PROGRESSO</h2>
+                        <h2>PROGRESSO {{$authUser->name}}</h2>
                         <div class="graph_header-line"></div>
                         <div class="graph-header-date">
                             <img src="/assets/images/icon-prev.png" />
