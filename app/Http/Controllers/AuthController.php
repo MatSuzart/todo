@@ -10,6 +10,9 @@ use App\Models\User;
 class AuthController extends Controller
 {
     public function index(Request $request){
+        if(Auth::check()){
+            return redirect()->route('home');
+        }
         return view('login');
     }
 
@@ -30,6 +33,12 @@ class AuthController extends Controller
     }
 
     public function register(Request $request){
+
+        $IsLoggedIn = Auth::user();
+        if($IsLoggedIn){
+            return redirect()->route('home');
+        }
+
         return view('register');
     }
 
