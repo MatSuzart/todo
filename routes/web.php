@@ -26,6 +26,8 @@ Route::get('/login',[AuthController::class, 'login_action'])->name('login_action
 Route::get('/register',[AuthController::class, 'register_action'])->name('register');
 Route::get('/register',[AuthController::class, 'register'])->name('user.register');
 
+Route::get('/logout',[AuthController::class, 'logout'])->name('logout');
+
 /*Route::get('/', function () {
     return view('home');
 });
