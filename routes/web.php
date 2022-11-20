@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+//Route::middleware(['auth'])->group(function(){});
+
+Route::get('/', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
 Route::get('/task/new', [TaskController::class, 'create'])->name('task.create');
 Route::post('/task/create_action', [TaskController::class, 'create_action'])->name('task.create_action');
