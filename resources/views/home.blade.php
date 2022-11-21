@@ -37,4 +37,10 @@
 
                             </div>
                     </section>
+
+<script>
+    function TaskUpdate(element){
+        isDone = element.checked
+    }
+</script>
 </x-layout>

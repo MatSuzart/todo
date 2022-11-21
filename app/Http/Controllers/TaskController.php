@@ -11,6 +11,10 @@ class TaskController extends Controller
 
     }
 
+    public function update(Request $request){
+        
+    }
+
     public function create(Request $request){
         $categories = Category::all();
 

@@ -1,6 +1,11 @@
 <div class="task">
                                     <div class="title">
-                                        <input type="checkbox" />
+                                        <input type="checkbox"  onChange="TaskUpdate(this)"
+
+                                        @if($data && $data['is_done'])
+                                            checked
+                                        @endif
+                                        />
                                         <div class="task_title">TITLE (COMPONENTE)</div>
                                     </div>
                                     <div class="priority">
@@ -16,3 +21,4 @@
                                         </a>
                                     </div>
                                 </div>
+
