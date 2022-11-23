@@ -39,8 +39,18 @@
                     </section>
 
 <script>
-    function TaskUpdate(element){
-        isDone = element.checked
+   async function TaskUpdate(element){
+       let status isDone = element.checked;
+       let taskId = element.dataset.id;
+        let rawResult = await = fetch(url, {
+            method: {
+                'Content-type':application/json,
+                'accpet': 'application/json'
+            },
+            body; JSON.stringify(status, taskId);
+
+        });
+        result = await rawResult.json();
     }
 </script>
 </x-layout>
