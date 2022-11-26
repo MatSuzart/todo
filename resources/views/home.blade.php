@@ -42,12 +42,13 @@
    async function TaskUpdate(element){
        let status isDone = element.checked;
        let taskId = element.dataset.id;
+       let url = '{{route('task.update')}}';
         let rawResult = await = fetch(url, {
             method: {
                 'Content-type':application/json,
                 'accpet': 'application/json'
             },
-            body; JSON.stringify(status, taskId);
+            body; JSON.stringify(status, taskId, _token: '{{csrf_token()}}');
 
         });
         result = await rawResult.json();
