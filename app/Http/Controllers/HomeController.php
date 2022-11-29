@@ -9,8 +9,10 @@ class HomeController extends Controller
 {
     public function index (Request $request){
 
-        $tasks = Task::all()->take(3);
-        $authUser = Auth::user();
+        $tasks = Task::WHEREDATE('due_date', date('Y-M-D'))->get();
+
+        
+        $data['authUser'] = Auth::user();
 
         return view('home', ['tasks' => $tasks, 'authUser' =>$authUser]);
     }
