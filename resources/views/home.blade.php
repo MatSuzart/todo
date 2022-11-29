@@ -52,6 +52,11 @@
 
         });
         result = await rawResult.json();
+        if(result.success){
+            alert('TASK UPDATE');
+        }else {
+            element.checked = !status;
+        }
     }
 </script>
 </x-layout>
