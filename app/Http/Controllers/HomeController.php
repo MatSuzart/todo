@@ -9,7 +9,15 @@ class HomeController extends Controller
 {
     public function index (Request $request){
 
-        $tasks = Task::WHEREDATE('due_date', date('Y-m-d'))->get();
+        if($rquest->date){
+            $filteredDate = $request->date;
+
+        }else{
+            $filteredDate = date('Y-m-d');
+        }
+
+
+        $tasks = Task::WHEREDATE('due_date', $filteredDate)->get();
 
 
         $data['authUser'] = Auth::user();
