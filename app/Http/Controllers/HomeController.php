@@ -16,6 +16,9 @@ class HomeController extends Controller
             $filteredDate = date('Y-m-d');
         }
 
+        $data['date_as_string'] = '';
+        $data['date_prev_button'] = '';
+        $data['date_next_button'] = '';
 
         $tasks = Task::WHEREDATE('due_date', $filteredDate)->get();
 

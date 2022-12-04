@@ -9,8 +9,15 @@
                         <h2>PROGRESSO {{$authUser->name}}</h2>
                         <div class="graph_header-line"></div>
                         <div class="graph-header-date">
+
+                           <a href="{{route('home',['date'=>$date_prev_button]}}">
                             <img src="/assets/images/icon-prev.png" />
+                            {{$date_as_string}}
+                            </a>
+
+                            <a href="{{route('home',['date'=>$date_next_button]}}">
                             <img src="/assets/images/icon-icon-next.png" />
+                            </a>
                         </div>
                         </div>
                         <div class="graph_header_subtitle">Task: <b>/6/</b></div>
