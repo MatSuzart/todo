@@ -16,9 +16,11 @@ class HomeController extends Controller
             $filteredDate = date('Y-m-d');
         }
 
-        $data['date_as_string'] = '';
-        $data['date_prev_button'] = '';
-        $data['date_next_button'] = '';
+        $carbonDate= Carbon::createFromDate($filteredDate);
+
+        $data['date_as_string'] = $carbonDate->format('d \d\e M');
+        $data['date_prev_button'] = $carbonDate->addDay(-1)->format('Y-m-d');
+        $data['date_next_button'] = $carbonDate->addDay(1)->format('Y-m-d');
 
         $tasks = Task::WHEREDATE('due_date', $filteredDate)->get();
 
