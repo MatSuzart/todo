@@ -29,10 +29,16 @@
                           </div>
                     </section>
                     <section class="list">
-                            <div class="list-header">
+                            <div class="list-header" OneChange="changeStatusFilter(this)">
                                 <select class="list_header-select">
-                                    <option value="1">
+                                    <option value="all_taks">
                                         ALL TASKS
+                                    </option>
+                                    <option value="tasks_pending">
+                                        ALL PENDING
+                                    </option>
+                                    <option value="tasks_done">
+                                        ALL DONE
                                     </option>
                                 </select>
                             </div>
