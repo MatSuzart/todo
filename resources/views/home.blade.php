@@ -51,6 +51,32 @@
                             </div>
                     </section>
 
+ <script>
+    function chnageTaskStatusFilter(e){
+        showAllTasks();
+
+        if(e.value =='task_peding'){
+            document.querySelector('.task_done').forEach(function(element){
+                element.stlye.display = 'nome';
+            });
+        }else if (e.value == 'task_done'){
+            document.querySelector('.task_pending').forEach(function(element){
+                element.stlye.display = 'nome';
+        }
+
+        function showAllTasks(){
+            document.querySelector('.task').foreach(function(element){
+                element.style.display = 'block';
+            });
+        }
+
+    }
+
+
+
+
+ </script>
+
 <script>
    async function TaskUpdate(element){
        let status isDone = element.checked;
