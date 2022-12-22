@@ -30,11 +30,4 @@ Route::get('/register',[AuthController::class, 'register'])->name('user.register
 
 Route::get('/logout',[AuthController::class, 'logout'])->name('logout');
 
-/*Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/login', function(){
-    return view('login');
-});
 
